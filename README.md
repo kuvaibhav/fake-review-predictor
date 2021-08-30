@@ -9,11 +9,11 @@ Moreover, with critical industries like healthcare moving to online platforms, t
 being questioned more than ever. This project tackles this problem by building a BERT based classifier that takes the review
 text and the information of its reviewer as input and outputs whether the review is reliable.
 
-#Dataset
+# Dataset
 All the data has been collected from Yelp.com by Rayana and Akoglu and it includes product and user
 information in the form of an ‘ID’, timestamp, ratings and plaintext review.
 
-#Data Cleaning and Feature Extraction
+# Data Cleaning and Feature Extraction
 For the text reviews, we removed punctuations, special characters and stop words from our dataset. Although
 the dataset had a lot of metadata like user id, product id, review date etc, only the text
 reviews, the ratings, and the fake review indicator were chosen as other metadata didn't provided any further improvemnt on BERT model. 
@@ -22,7 +22,7 @@ reviews. Making this visualization confirmed that dataset is indeed a restaurant
 since most of the topics revolve around food and customer service.
 ![image](https://user-images.githubusercontent.com/41999054/131270234-f9116dd1-58e0-4690-93e1-c4284668974f.png)
 
-End Result: 
+# End Result: 
 For initial analysis the review centric features were not considered and the model was trained only on text and
 corresponding labels. Training was done on GPU provided by Google Colab.For the next part, additional
 features were extracted from the dataset and appended to the original review text. This gave higher accuracy.
